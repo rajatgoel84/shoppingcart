@@ -27,7 +27,7 @@ class App extends Component {
     this.setState({ counters });
   };
   handleDelete = counterID => {
-    const counters = this.state.counters.filter(c => c.id != counterID);
+    const counters = this.state.counters.filter(c => c.id !== counterID);
     this.setState({ counters });
     //  console.log('Deleted');
   };
